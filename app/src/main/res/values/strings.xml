@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Burning_up</string>
+<!--  StratActivity  -->
+    <string name="btn_mng">관리자</string>
+    <string name="btn_user">일반사용자</string>
+<!--  유저로그인  -->
+    <string name="edt_id_u">ID</string>
+    <string name="edt_pw_u">PW</string>
+    <string name="btn_login_u">로그인</string>
+    <string name="btn_join_u">회원가입</string>
+<!--  관리자로그인  -->
+    <string name="edt_id_m">ID</string>
+    <string name="edt_pw_m">PW</string>
+    <string name="btn_login_m">로그인</string>
+    <string name="btn_join_m">회원가입</string>
 </resources>
