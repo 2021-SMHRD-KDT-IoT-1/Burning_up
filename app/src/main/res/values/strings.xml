@@ -1,16 +1,46 @@
 <resources>
     <string name="app_name">Burning_up</string>
-<!--  StratActivity  -->
+    <!--  StratActivity  -->
     <string name="btn_mng">관리자</string>
     <string name="btn_user">일반사용자</string>
-<!--  유저로그인  -->
+    <!--  유저로그인  -->
     <string name="edt_id_u">ID</string>
     <string name="edt_pw_u">PW</string>
     <string name="btn_login_u">로그인</string>
     <string name="btn_join_u">회원가입</string>
-<!--  관리자로그인  -->
+    <!--  관리자로그인  -->
     <string name="edt_id_m">ID</string>
     <string name="edt_pw_m">PW</string>
     <string name="btn_login_m">로그인</string>
     <string name="btn_join_m">회원가입</string>
+    <!--  유저 회원가입  -->
+    <string name="edt_joinid_u">ID를 입력해주세요</string>
+    <string name="edt_joinpw_u">비밀번호를 입력해주세요</string>
+    <string name="edt_name_u">이름을 입력해주세요</string>
+    <string name="edt_birth_u">생년월일을 입력하세요</string>
+    <string name="edt_tel_u">연락처를 입력하세요</string>
+    <string name="btn_joinok_u">가입하기</string>
+    <string name="btn_joincancel_u">취소</string>
+    성별 라디오버튼 추가해야함
+    <!--  관리자 회원가입  -->
+    <string name="edt_joinid_m">ID를 입력해주세요</string>
+    <string name="edt_joinpw_m">비밀번호를 입력해주세요</string>
+    <string name="edt_bdname_m">건물명을 입력해주세요</string>
+    <string name="edt_address_m">주소를 입력해주세요</string>
+    <string name="edt_mngname_m">관리인이름을 입력해주세요</string>
+    <string name="edt_mngnumber_m">관리실번호를 입력해주세요</string>
+    <string name="btn_joinok_m">가입하기</string>
+    <string name="btn_joincancel_m">취소</string>
+    <!--  유저 메인  -->
+    <string name="btn_freBD">자주가는 건물</string>
+    <string name="btn_BDinfo">건물 정보</string>
+    <string name="btn_alarm_u">소화기 찾기</string>
+    <string name="btn_119_u">화재신고</string>
+    <!--  관리자 메인  -->
+    <string name="btn_FEtag">소화기 태그</string>
+    <string name="btn_FEmng">소화기 관리</string>
+    <string name="btn_BDmng">건물 관리</string>
+    <string name="btn_FEdisposal">소화기 폐기</string>
+    <string name="btn_alarm_m">화재 알림</string>
+    <string name="btn_119_m">화재 신고</string>
 </resources>

@@ -21,6 +21,7 @@ public class LoginActivity_U extends AppCompatActivity {
         btn_join_u = findViewById(R.id.btn_join_u);
         btn_login_u = findViewById(R.id.btn_login_u);
 
+        // 사용자 회원가입 페이지로 이동
         btn_join_u.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,6 +30,7 @@ public class LoginActivity_U extends AppCompatActivity {
             }
         });
 
+        // 사용자 로그인 - 이클립스 연동으로 DB연결 필요
         btn_login_u.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

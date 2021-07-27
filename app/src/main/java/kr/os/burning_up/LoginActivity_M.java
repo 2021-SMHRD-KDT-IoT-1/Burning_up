@@ -22,6 +22,7 @@ public class LoginActivity_M extends AppCompatActivity {
         btn_login_m = findViewById(R.id.btn_login_m);
         btn_join_m = findViewById(R.id.btn_join_m);
 
+        // 관리자 회원가입페이지로 이동
         btn_join_m.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +30,7 @@ public class LoginActivity_M extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        // 관리자로그인 - 이클립스 연동으로 DB와 연결 필요
         btn_login_m.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
