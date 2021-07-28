@@ -2,12 +2,12 @@
     <string name="app_name">Burning_up</string>
     <!--  StratActivity  -->
     <string name="btn_mng">관리자</string>
-    <string name="btn_user">일반사용자</string>
+    <string name="btn_user">사용자</string>
     <!--  유저로그인  -->
     <string name="edt_id_u">ID</string>
     <string name="edt_pw_u">PW</string>
-    <string name="btn_login_u">로그인</string>
-    <string name="btn_join_u">회원가입</string>
+    <string name="btn_login_u">LOGIN</string>
+    <string name="btn_join_u">JOIN</string>
     <!--  관리자로그인  -->
     <string name="edt_id_m">ID</string>
     <string name="edt_pw_m">PW</string>
@@ -19,6 +19,8 @@
     <string name="edt_name_u">이름을 입력해주세요</string>
     <string name="edt_birth_u">생년월일을 입력하세요</string>
     <string name="edt_tel_u">연락처를 입력하세요</string>
+    <string name="radio_man">남</string>
+    <string name="radio_woman">여</string>
     <string name="btn_joinok_u">가입하기</string>
     <string name="btn_joincancel_u">취소</string>
     성별 라디오버튼 추가해야함

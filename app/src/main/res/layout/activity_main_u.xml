@@ -6,4 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity_U">
 
+    <Button
+        android:id="@+id/btn_alarm_u"
+        android:layout_width="94dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="187dp"
+        android:text="@string/btn_alarm_u"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_119_u"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alarm_m3" />
+
+    <Button
+        android:id="@+id/btn_alarm_m3"
+        android:layout_width="94dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="106dp"
+        android:text="@string/btn_freBD"
+        app:layout_constraintBottom_toTopOf="@+id/btn_alarm_u"
+        app:layout_constraintEnd_toStartOf="@+id/btn_alarm_m4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_119_u"
+        android:layout_width="94dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="187dp"
+        android:text="@string/btn_119_u"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_alarm_u"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alarm_m4" />
+
+    <Button
+        android:id="@+id/btn_alarm_m4"
+        android:layout_width="94dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="106dp"
+        android:text="@string/btn_BDinfo"
+        app:layout_constraintBottom_toTopOf="@+id/btn_119_u"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_alarm_m3"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
