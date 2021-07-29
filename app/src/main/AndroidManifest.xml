@@ -20,13 +20,17 @@
         <activity android:name=".FE_tag_M" />
         <activity android:name=".MainActivity_M" />
         <activity android:name=".MainActivity_U" />
-        <activity android:name=".JoinActivity_U" />
-        <activity android:name=".LoginActivity_U">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".JoinActivity_U" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <!--   시작지점     -->
+        <activity android:name=".LoginActivity_U">
+
         </activity>
         <activity android:name=".JoinActivity_M" />
     </application>
