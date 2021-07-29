@@ -166,34 +166,32 @@
 
     <RadioGroup
         android:id="@+id/gender"
-        android:layout_width="100dp"
-        android:layout_height="46dp"
+        android:layout_width="101dp"
+        android:layout_height="53dp"
         android:layout_marginStart="39dp"
         android:layout_marginLeft="39dp"
-        android:layout_marginEnd="275dp"
-        android:layout_marginRight="275dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="271dp"
+        android:layout_marginRight="271dp"
+        android:layout_marginBottom="17dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/textView40"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView43">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/radio_man" />
 
-            <RadioButton
-                android:id="@+id/radio_man"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_man" />
-
-            <RadioButton
-                android:id="@+id/radio_woman"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radio_woman" />
-        </LinearLayout>
+        <RadioButton
+            android:id="@+id/radio_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/radio_woman" />
 
     </RadioGroup>
 
