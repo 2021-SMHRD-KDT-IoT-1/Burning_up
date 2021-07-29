@@ -24,7 +24,7 @@
     <string name="edt_bdname_m">건물명을 입력해주세요</string>
     <string name="edt_address_m">주소를 입력해주세요</string>
     <string name="edt_mngname_m">관리인이름을 입력해주세요</string>
-    <string name="edt_mngnumber_m">관리실번호를 입력해주세요</string>
+    <string name="edt_mngnumber_m">관리자번호를 입력해주세요</string>
     <string name="btn_joinok_m">가입하기</string>
     <string name="btn_joincancel_m">취소</string>
     <!--  유저 메인  -->

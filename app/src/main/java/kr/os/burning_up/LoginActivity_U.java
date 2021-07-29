@@ -9,6 +9,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class LoginActivity_U extends AppCompatActivity {
     EditText edt_id_u,edt_pw_u;
     Button btn_login_u, btn_join_u,btn_join_m;
@@ -49,11 +60,30 @@ public class LoginActivity_U extends AppCompatActivity {
         btn_login_u.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String login_url = "http://localhost:8081/BurningAndroidServer/JoinService";
+                String login_url = "http://localhost:8081/BurningAndroidServer/LoginService";
 
-                StringRequest request = new StringRequest(DownloadManager.Request.Method.post, login_url, new Response.Listener<String>(){
+                StringRequest request = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
 
-                });
+                    }
+                }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                    }
+                }){
+                    @Override
+                    protected Map<String, String> getParams() throws AuthFailureError {
+                        // 로그인 값 받아오기
+                        Map<String, String> params = new HashMap<>();
+                        params.put("login_id",edt_id_u.getText().toString());
+                        params.put("login_pw",edt_pw_u.getText().toString());
+                        return params;
+                    }
+                };
+
+                queue.add(request);
             }
         });
     }
