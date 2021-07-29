@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="kr.os.burning_up">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,16 +21,14 @@
         <activity android:name=".MainActivity_M" />
         <activity android:name=".MainActivity_U" />
         <activity android:name=".JoinActivity_U" />
-        <activity android:name=".LoginActivity_U" />
-        <activity android:name=".StartActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".LoginActivity_U">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
         <activity android:name=".JoinActivity_M" />
-        <activity android:name=".LoginActivity_M" />
     </application>
 
 </manifest>
