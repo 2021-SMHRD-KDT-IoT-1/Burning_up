@@ -28,7 +28,7 @@
     <string name="btn_joinok_m">가입하기</string>
     <string name="btn_joincancel_m">취소</string>
     <!--  유저 메인  -->
-    <string name="btn_freBD">자주가는 건물</string>
+    <string name="btn_freBD">자주가는건물</string>
     <string name="btn_BDinfo">건물 정보</string>
     <string name="btn_alarm_u">소화기 찾기</string>
     <string name="btn_119_u">화재신고</string>
@@ -38,11 +38,7 @@
     <string name="btn_BDmng">건물 관리</string>
     <string name="btn_FEdisposal">소화기 폐기</string>
     <string name="btn_alarm_m">화재 알림</string>
-    <string name="btn_119_m">화재 신고</string>
-
-
-
-
+    <string name="btn_FF_m">소방정보 관리</string>
 
 
 </resources>
