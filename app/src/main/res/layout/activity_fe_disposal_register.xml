@@ -5,21 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
 
-        android:layout_width="363dp"
+        android:layout_width="392dp"
 
-        android:layout_height="521dp"
+        android:layout_height="525dp"
 
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -36,13 +30,15 @@
             android:layout_marginLeft="10dp"
 
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center|left"
             android:text="소화기 고유번호"
             android:textSize="20sp" />
 
         <TextView
 
-            android:id="@+id/textView18"
+            android:id="@+id/fe_num"
 
             android:layout_width="match_parent"
 
@@ -52,8 +48,9 @@
             android:layout_marginStart="10dp"
 
             android:layout_marginLeft="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center|left"
-            android:text="소화기 고유번호"
             android:textSize="24sp" />
 
         <TextView
@@ -70,13 +67,15 @@
             android:layout_marginLeft="10dp"
 
             android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center|left"
             android:text="소화기 생산일"
             android:textSize="20sp" />
 
         <TextView
 
-            android:id="@+id/textView19"
+            android:id="@+id/made_date"
 
             android:layout_width="match_parent"
 
@@ -86,13 +85,14 @@
             android:layout_marginStart="10dp"
 
             android:layout_marginLeft="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center|left"
-            android:text="소화기 생산일"
             android:textSize="24sp" />
 
         <TextView
 
-            android:id="@+id/textView13"
+            android:id="@+id/설치장소"
 
             android:layout_width="match_parent"
 
@@ -104,13 +104,19 @@
             android:layout_marginLeft="10dp"
 
             android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center|left"
-            android:text="설치 장소(층)"
+            android:text="수거 희망일"
             android:textSize="20sp" />
 
-        <TextView
+        <EditText
 
-            android:id="@+id/textView17"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date"
+
+            android:id="@+id/install_where"
 
             android:layout_width="match_parent"
 
@@ -120,8 +126,9 @@
             android:layout_marginStart="10dp"
 
             android:layout_marginLeft="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center|left"
-            android:text="설치장소(층)"
             android:textSize="24sp" />
 
         <TextView
@@ -138,25 +145,27 @@
             android:layout_marginLeft="10dp"
 
             android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center|left"
-            android:text="소화기 설치장소(별칭)"
+            android:text="폐기사유"
             android:textSize="20sp" />
 
-        <TextView
-
-            android:id="@+id/textView21"
-
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
             android:layout_width="match_parent"
-
             android:layout_height="wrap_content"
-
-
             android:layout_marginStart="10dp"
 
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="5dp"
-            android:gravity="center|left"
-            android:text="소화기 설치장소(별칭)"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
             android:textSize="24sp" />
 
         <LinearLayout
@@ -166,6 +175,7 @@
             android:layout_height="wrap_content"
 
             android:gravity="center"
+
 
             android:orientation="horizontal">
 
@@ -178,6 +188,10 @@
 
                 android:layout_height="match_parent"
 
+                android:layout_marginStart="10dp"
+
+                android:layout_marginLeft="10dp"
+
                 android:layout_marginTop="10dp"
 
                 android:layout_weight="1"
@@ -185,7 +199,6 @@
                 android:background="#EFEFEF"
 
                 android:clickable="true"
-
                 android:gravity="center"
 
                 android:text="취소"
@@ -203,25 +216,30 @@
 
                 android:layout_height="60dp"
 
+                android:layout_marginStart="10dp"
+
+                android:layout_marginLeft="10dp"
+
                 android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="8dp"
+
+                android:layout_marginRight="8dp"
 
                 android:layout_weight="1"
 
                 android:background="#EFEFEF"
-
                 android:clickable="true"
 
                 android:gravity="center"
-
                 android:text="등록하기"
-
                 android:textColor="#000000"
-
                 android:textSize="16dp"
                 android:textStyle="bold" />
+
+
 
         </LinearLayout>
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

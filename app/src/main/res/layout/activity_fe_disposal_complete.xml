@@ -8,9 +8,9 @@
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -19,7 +19,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="8dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
@@ -31,7 +31,7 @@
 
                 android:gravity="left|center_vertical"
                 android:inputType="textMultiLine"
-                android:text="ⓘ 설치정보"
+                android:text="ⓘ 수거정보"
                 android:textColor="#000000"
                 android:textSize="34sp"
                 android:textStyle="bold" />
@@ -40,11 +40,11 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="70dp">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
                 android:text="건물명"
@@ -54,9 +54,9 @@
 
             <TextView
                 android:id="@+id/bd_name"
-                android:layout_width="223dp"
-                android:layout_height="45dp"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight=""
                 android:gravity="center|fill_vertical"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -65,23 +65,23 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="70dp">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
-                android:text="설치장소"
+                android:text="소화기 품명"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/install_where"
-                android:layout_width="223dp"
-                android:layout_height="45dp"
-                android:layout_weight="1"
+                android:id="@+id/fe_number"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight=""
                 android:gravity="center|fill_vertical"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -90,23 +90,23 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="70dp">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
-                android:text="관리자"
+                android:text="신청자"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/manager"
-                android:layout_width="223dp"
-                android:layout_height="45dp"
-                android:layout_weight="1"
+                android:id="@+id/apply"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="0"
                 android:gravity="center|fill_vertical"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -116,23 +116,23 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="70dp">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
-                android:text="설치일자"
+                android:text="희망수거일"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/install_date"
-                android:layout_width="223dp"
-                android:layout_height="45dp"
-                android:layout_weight="1"
+                android:id="@+id/wish_dispoasal"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="0"
                 android:background="@android:color/transparent"
                 android:ems="10"
                 android:gravity="center|fill_vertical"
@@ -146,137 +146,71 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="8dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:gravity="left|center_vertical"
-                android:text="ⓘ 점검정보"
-
-                android:textColor="#000000"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="70dp">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
-                android:text="제조일자"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/made_date"
-                android:layout_width="223dp"
-                android:layout_height="45dp"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:ems="10"
-                android:gravity="center|fill_vertical"
-                android:inputType="date"
-                android:textColor="#000000"
-                android:textSize="20dp"
-                android:visibility="visible" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center|fill_vertical"
-                android:text="최종점검일"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/final_check"
-                android:layout_width="223dp"
-                android:layout_height="45dp"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:ems="10"
-                android:gravity="center|fill_vertical"
-                android:inputType="date"
-                android:textColor="#000000"
-                android:textSize="20dp" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_weight="1"
-                android:gravity="center|fill_vertical"
-                android:text="점검자"
+                android:text="진행상태"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/checker"
-                android:layout_width="223dp"
-                android:layout_height="45dp"
-                android:layout_weight="1"
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="0"
                 android:gravity="center|fill_vertical"
                 android:textColor="#000000"
-                android:textSize="20dp" />
-
+                android:textSize="20sp" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="70dp">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
-                android:text="점검상태"
+                android:text="폐기사유"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/check_status"
-                android:layout_width="223dp"
-                android:layout_height="45dp"
-                android:layout_weight="1"
+                android:id="@+id/why_diposal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="0"
                 android:gravity="center|fill_vertical"
                 android:textColor="#000000"
-                android:textSize="20dp" />
+                android:textSize="20dp" /><![CDATA[
 
+            />
 
+        ]]>
         </TableRow>
+
     </TableLayout>
 
-
-
-
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="305dp"
+        android:layout_marginLeft="305dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="확인"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
