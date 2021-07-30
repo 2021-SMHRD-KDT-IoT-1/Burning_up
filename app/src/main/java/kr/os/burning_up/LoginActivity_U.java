@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -65,7 +66,15 @@ public class LoginActivity_U extends AppCompatActivity {
                 StringRequest request = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-
+                        if(response.equals("1")){
+                            Intent intent = new Intent(getApplicationContext(), MainActivity_M.class);
+                            startActivity(intent);
+                        }else if(response.equals("2")){
+                            Intent intent = new Intent(getApplicationContext(), MainActivity_U.class);
+                            startActivity(intent);
+                        }else{
+                            Toast.makeText(LoginActivity_U.this, "아이디와 비밀번호를 확인해주세요!", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 }, new Response.ErrorListener() {
                     @Override

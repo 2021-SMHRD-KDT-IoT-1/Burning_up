@@ -31,6 +31,7 @@ public class JoinActivity_U extends AppCompatActivity {
     Button btn_joinok_u,btn_joincancel_u;
     RequestQueue queue;
     String gen;
+    String code = "2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +111,7 @@ public class JoinActivity_U extends AppCompatActivity {
                         params.put("join_tel",tel);
                         params.put("join_birth",birth);
                         params.put("join_gen",gen);
+                        params.put("join_c",code);
                         return params;
                     }
                 };

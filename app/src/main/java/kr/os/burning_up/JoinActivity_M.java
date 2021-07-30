@@ -27,6 +27,7 @@ public class JoinActivity_M extends AppCompatActivity {
     EditText edt_joinid_m, edt_joinpw_m, edt_bdname_m, edt_address_m, edt_mngname_m, edt_mngnumber_m;
     Button btn_joinok_m, btn_joincancel_m;
     RequestQueue queue;
+    String code = "1";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +91,7 @@ public class JoinActivity_M extends AppCompatActivity {
                         params.put("join_tel",tel);
                         params.put("join_adr",adr);
                         params.put("join_bdname",bdname);
+                        params.put("join_c",code);
                         return params;
                     }
                 };
