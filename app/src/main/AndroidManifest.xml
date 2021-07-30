@@ -10,46 +10,33 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Burning_up">
+        android:theme="@style/Theme.Burning_up"
+        android:usesCleartextTraffic="true">
         <activity android:name=".fe_manage"></activity>
-        <activity android:name=".BD_info_U" />
-        <activity android:name=".Fre_building_U" />
-        <activity android:name=".Fire_alarm_M" />
+        <activity android:name=".BD_info_U" ></activity>
+        <activity android:name=".Fre_building_U" ></activity>
+        <activity android:name=".Fire_alarm_M" ></activity>
         <activity android:name=".FE_disposal_M"></activity>
-        <activity android:name=".BD_mng_M">
+        <activity android:name=".BD_mng_M"></activity>
+        <activity android:name=".FE_mng_M" ></activity>
+        <activity android:name=".FE_tag_M" ></activity>
+        <activity android:name=".MainActivity_M" ></activity>
+        <activity android:name=".MainActivity_U" ></activity>
+        <activity android:name=".JoinActivity_U" ></activity>
+        <!--    strat    -->
+        <activity android:name=".LoginActivity_U">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-        <activity android:name=".FE_disposal_M" />
-        <activity android:name=".BD_mng_M" />
-        <activity android:name=".FE_mng_M" />
-        <activity android:name=".FE_tag_M" />
-        <activity android:name=".MainActivity_M" />
-        <activity android:name=".MainActivity_U" />
-        <activity android:name=".JoinActivity_U" >
-
-
-        </activity>
-        <!--   시작지점     -->
-        <activity android:name=".LoginActivity_U">
-
-        </activity>
-        <activity android:name=".JoinActivity_M">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FE_mng_M"></activity>
-        <activity android:name=".FE_tag_M"></activity>
-        <activity android:name=".MainActivity_M" />
-        <activity android:name=".MainActivity_U" />
-        <activity android:name=".JoinActivity_U"></activity> <!-- 시작지점 -->
-        <activity android:name=".LoginActivity_U"></activity>
-        <activity android:name=".JoinActivity_M" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+        <activity android:name=".JoinActivity_M">
+
+        </activity>
+
+
+
     </application>
 
 </manifest>

@@ -82,7 +82,7 @@ public class JoinActivity_U extends AppCompatActivity {
                 String tel = edt_tel_u.getText().toString();
                 String birth = edt_birth_u.getText().toString();
 
-                String join_url = "http://localhost:8081/BurningAndroidServer/JoinService";
+                String join_url = "http://192.168.229.25:8081/BurningAndroidServer/UserJoinService";
 
                 StringRequest request = new StringRequest(Request.Method.POST, join_url, new Response.Listener<String>() {
                     @Override

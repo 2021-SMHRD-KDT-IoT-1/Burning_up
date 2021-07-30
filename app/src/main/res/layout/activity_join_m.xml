@@ -89,7 +89,7 @@
         android:layout_marginRight="39dp"
         android:ems="10"
         android:hint="@string/edt_mngname_m"
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -161,7 +161,7 @@
         android:layout_marginRight="39dp"
         android:ems="10"
         android:hint="@string/edt_address_m"
-        android:inputType="phone"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -176,7 +176,7 @@
         android:layout_marginRight="39dp"
         android:ems="10"
         android:hint="@string/edt_bdname_m"
-        android:inputType="phone"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
