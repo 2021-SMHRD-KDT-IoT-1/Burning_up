@@ -45,7 +45,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="8dp"
+                android:layout_width="223dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
@@ -55,18 +55,18 @@
 
             <Button
                 android:layout_width="8dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
                 android:text="정상"
                 android:textColor="#000000"
                 android:textSize="20dp"
                 app:backgroundTint="#DCDCDC" />
 
             <Button
-                android:layout_width="8dp"
-                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="3dp"
-                android:layout_weight="1"
+                android:layout_weight="0"
                 android:text="비정상"
                 android:textColor="#000000"
                 android:textSize="20dp"
@@ -79,7 +79,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="206dp"
+                android:layout_width="223dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
@@ -88,9 +88,9 @@
                 android:textSize="20dp" />
 
             <Button
-                android:layout_width="103dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
                 android:text="정상"
                 android:textColor="#000000"
                 android:textSize="20dp"
@@ -98,9 +98,9 @@
 
             <Button
                 android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="3dp"
-                android:layout_weight="1"
+                android:layout_weight="0"
                 android:text="비정상"
                 android:textColor="#000000"
                 android:textSize="20dp"
@@ -113,7 +113,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="162dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
@@ -121,19 +121,25 @@
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="불량"
-                android:textColor="#000000" />
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="양호"
-                android:textColor="#000000" />
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="양호" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="불량" />
+            </RadioGroup>
+
 
         </TableRow>
 
@@ -142,7 +148,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="162dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
@@ -150,19 +156,25 @@
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="불량"
-                android:textColor="#000000" />
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="양호"
-                android:textColor="#000000" />
+                <RadioButton
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="양호" />
+
+                <RadioButton
+
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="불량" />
+            </RadioGroup>
+
 
         </TableRow>
 
@@ -171,7 +183,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="162dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
@@ -179,19 +191,25 @@
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="불량"
-                android:textColor="#000000" />
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="양호"
-                android:textColor="#000000" />
+                <RadioButton
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="양호" />
+
+                <RadioButton
+
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="불량" />
+            </RadioGroup>
+
 
         </TableRow>
 
@@ -200,7 +218,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="162dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center|fill_vertical"
@@ -208,19 +226,25 @@
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="불량"
-                android:textColor="#000000" />
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="정상"
-                android:textColor="#000000" />
+                <RadioButton
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="양호" />
+
+                <RadioButton
+
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="불량" />
+            </RadioGroup>
+
 
         </TableRow>
 
@@ -229,13 +253,21 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="137dp"
+        android:layout_width="0dp"
         android:layout_height="47dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="179dp"
         android:text="점검완료"
         android:textColor="#000000"
         app:backgroundTint="#DCDCDC"
-        tools:layout_editor_absoluteX="240dp"
-        tools:layout_editor_absoluteY="377dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
