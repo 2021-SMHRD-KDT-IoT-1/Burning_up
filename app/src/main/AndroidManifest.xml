@@ -12,18 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Burning_up"
         android:usesCleartextTraffic="true">
-        <activity android:name=".fe_manage"></activity>
-        <activity android:name=".BD_info_U" ></activity>
-        <activity android:name=".Fre_building_U" ></activity>
-        <activity android:name=".Fire_alarm_M" ></activity>
-        <activity android:name=".FE_disposal_M"></activity>
-        <activity android:name=".BD_mng_M"></activity>
-        <activity android:name=".FE_mng_M" ></activity>
-        <activity android:name=".FE_tag_M" ></activity>
         <activity android:name=".MainActivity_M" ></activity>
         <activity android:name=".MainActivity_U" ></activity>
         <activity android:name=".JoinActivity_U" ></activity>
-        <!--    strat    -->
+
         <activity android:name=".LoginActivity_U">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

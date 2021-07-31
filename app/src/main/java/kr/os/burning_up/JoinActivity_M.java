@@ -62,7 +62,7 @@ public class JoinActivity_M extends AppCompatActivity {
                 String tel = edt_mngnumber_m.getText().toString();
                 String adr = edt_address_m.getText().toString();
 
-                String join_url = "http://192.168.229.25:8081/BurningAndroidServer/MngJoinService";
+                String join_url = "http://192.168.102.25:8081/BurningAndroidServer/MngJoinService";
 
                 StringRequest request = new StringRequest(Request.Method.POST, join_url, new Response.Listener<String>() {
                     @Override

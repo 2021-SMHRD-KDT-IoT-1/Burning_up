@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Burning_up</string>
     <!--  로그인  -->
+    <string name="tv_title">Login</string>
     <string name="edt_id_u">ID</string>
     <string name="edt_pw_u">PW</string>
     <string name="btn_login_u">LOGIN</string>
@@ -39,4 +40,7 @@
     <string name="btn_FEdisposal">소화기 폐기</string>
     <string name="btn_alarm_m">화재 알림</string>
     <string name="btn_119_m">화재 신고</string>
+
+
+    <string name="btn_FF_m"></string>
 </resources>
