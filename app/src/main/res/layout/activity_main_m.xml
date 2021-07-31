@@ -13,15 +13,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Frame"
         app:menu="@menu/bottom_nav_item" />
 
     <FrameLayout
         android:id="@+id/Frame"
-        android:layout_width="419dp"
-        android:layout_height="466dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/nav1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav2">
 
     </FrameLayout>
 
@@ -29,10 +31,11 @@
         android:id="@+id/nav2"
         android:layout_width="153dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/Frame"
+        android:layout_marginStart="258dp"
+        android:layout_marginLeft="258dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/top_nav_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
