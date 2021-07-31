@@ -4,4 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity_M"/>
+    tools:context=".MainActivity_M">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav1"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_item" />
+
+    <FrameLayout
+        android:id="@+id/Frame"
+        android:layout_width="419dp"
+        android:layout_height="466dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav2"
+        android:layout_width="153dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/top_nav_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

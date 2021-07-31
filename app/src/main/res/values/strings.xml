@@ -6,6 +6,7 @@
     <string name="btn_login_u">LOGIN</string>
     <string name="btn_join_u">사용자 회원가입</string>
     <string name="btn_join_m">관리자 회원가입</string>
+    <string name="tv_title">Login</string>
 
     <!--  유저 회원가입  -->
     <string name="edt_joinid_u">ID를 입력해주세요</string>
@@ -39,4 +40,9 @@
     <string name="btn_FEdisposal">소화기 폐기</string>
     <string name="btn_alarm_m">화재 알림</string>
     <string name="btn_119_m">화재 신고</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  관리자 프래그먼트  -->
+    <string name="tv_frag1">좀 되라 씨발</string>
 </resources>
