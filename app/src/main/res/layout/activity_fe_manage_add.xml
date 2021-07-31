@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+
+        android:layout_height="525dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="10dp"
+
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|left"
+            android:text="소화기 고유번호"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:id="@+id/fe_num"
+
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|left"
+            android:textSize="24sp" />
+
+        <TextView
+
+            android:id="@+id/textView11"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+
+
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|left"
+            android:text="소화기 생산일"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:id="@+id/made_date"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|left"
+            android:textSize="24sp" />
+
+        <TextView
+
+            android:id="@+id/설치장소"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+
+
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|left"
+            android:text="설치장소(층)"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:id="@+id/install_where"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|left"
+            android:textSize="24sp" />
+
+        <TextView
+
+            android:id="@+id/textView29"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+
+
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|left"
+            android:text="소화기 설치장소(별칭)"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textSize="24sp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+
+
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:id="@+id/btn_ok2"
+
+                android:layout_width="61dp"
+
+                android:layout_height="match_parent"
+
+                android:layout_marginStart="10dp"
+
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_weight="1"
+
+                android:background="#EFEFEF"
+
+                android:clickable="true"
+                android:gravity="center"
+
+                android:text="취소"
+
+                android:textColor="#000000"
+
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/btn_ok"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="60dp"
+
+                android:layout_marginStart="10dp"
+
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="8dp"
+
+                android:layout_marginRight="8dp"
+
+                android:layout_weight="1"
+
+                android:background="#EFEFEF"
+                android:clickable="true"
+
+                android:gravity="center"
+                android:text="등록하기"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
