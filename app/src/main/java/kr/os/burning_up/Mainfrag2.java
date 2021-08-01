@@ -13,21 +13,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class Mainfrag2 extends Fragment {
-    BottomNavigationView nav;
-    Fe_disposal disposal;
-    Fe_mng mng;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.mainfrag2, container, false);
-        nav = view.findViewById(R.id.Frame1);
-        disposal = new Fe_disposal();
-        mng = new Fe_mng();
-
-
-
 
         return view;
     }

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update_M">
+
+    <EditText
+        android:id="@+id/edt_mngtel"
+        android:layout_width="159dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/edt_mngtel"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edt_mngpw"
+        app:layout_constraintStart_toStartOf="@+id/edt_mngpw"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mngpw" />
+
+    <EditText
+        android:id="@+id/edt_mngpw"
+        android:layout_width="158dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/edt_mngpw"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my7"
+        app:layout_constraintEnd_toEndOf="@+id/edt_mngname"
+        app:layout_constraintStart_toStartOf="@+id/edt_mngname"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mngname"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/edt_mngname"
+        android:layout_width="159dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/edt_mngname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my"
+        app:layout_constraintStart_toEndOf="@+id/tv_my"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:text="@string/tv_my1"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_my2"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tv_my7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_my3"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_my"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my" />
+
+    <TextView
+        android:id="@+id/tv_my10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_my6"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_my7"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my7" />
+
+    <Button
+        android:id="@+id/btn_updateok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/btn_updateok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

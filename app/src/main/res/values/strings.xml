@@ -63,4 +63,9 @@
     <string name="tv_tel">연락처</string>
     <string name="btn_logout">로그아웃</string>
     <string name="btn_update">정보수정</string>
+    <!--  관리자 정보수정  -->
+    <string name="edt_mngname">이름입력</string>
+    <string name="edt_mngpw">비밀번호입력</string>
+    <string name="edt_mngtel">전화번호입력</string>
+    <string name="btn_updateok">수정완료</string>
 </resources>
