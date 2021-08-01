@@ -16,6 +16,7 @@ public class MainActivity_M extends AppCompatActivity {
     Mainfrag3 frag3;
     Mainfrag4 frag4;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,7 @@ public class MainActivity_M extends AppCompatActivity {
         frag2 = new Mainfrag2();
         frag3 = new Mainfrag3();
         frag4 = new Mainfrag4();
+
 
 
 

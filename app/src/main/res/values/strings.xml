@@ -45,4 +45,7 @@
 
     <!--  관리자 프래그먼트  -->
     <string name="tv_frag1">좀 되라 씨발</string>
+    <string name="btn_mypage_m">마이페이지</string>
+    <string name="btn_alarm">알림</string>
+    <string name="btn_fecall">소화기 호출</string>
 </resources>

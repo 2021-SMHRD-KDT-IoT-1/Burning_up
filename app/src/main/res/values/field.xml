@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-<string-array name="spinnerArray">
-    <item name="" type="">1층</item>
-    <item name="" type="">2층</item>
-    <item name="" type="">3층</item>
-
-    </string-array>
-</resources>
