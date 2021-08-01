@@ -21,7 +21,6 @@
         </activity>
         <activity android:name=".MainActivity_U" ></activity>
         <activity android:name=".JoinActivity_U" ></activity>
-
         <activity android:name=".LoginActivity_U">
 
         </activity>
