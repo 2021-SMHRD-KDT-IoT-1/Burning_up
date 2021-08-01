@@ -6,4 +6,157 @@
     android:layout_height="match_parent"
     tools:context=".Mypage_M">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:text="@string/tv_my1"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_my2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="239dp"
+        android:layout_marginRight="239dp"
+        android:text="@string/tv_my2"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tv_my4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_my4"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_my3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my3" />
+
+    <TextView
+        android:id="@+id/tv_my6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_my6"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_my5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my5" />
+
+    <TextView
+        android:id="@+id/tv_my3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_my3"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_my2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my2" />
+
+    <TextView
+        android:id="@+id/tv_my5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_my5"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_my4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my4" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/btn_logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_update"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:text="@string/btn_update"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_logout"
+        app:layout_constraintTop_toTopOf="@+id/btn_logout" />
+
+    <TextView
+        android:id="@+id/tv_mng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/tv_mng"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my2"
+        app:layout_constraintStart_toEndOf="@+id/tv_my2" />
+
+    <TextView
+        android:id="@+id/tv_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv_pw"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my3"
+        app:layout_constraintStart_toStartOf="@+id/tv_mng"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mng" />
+
+    <TextView
+        android:id="@+id/tv_bdname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv_bdname"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my4"
+        app:layout_constraintStart_toStartOf="@+id/tv_pw"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pw" />
+
+    <TextView
+        android:id="@+id/tv_adr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv_adr"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my5"
+        app:layout_constraintStart_toStartOf="@+id/tv_bdname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bdname" />
+
+    <TextView
+        android:id="@+id/tv_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv_tel"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my6"
+        app:layout_constraintStart_toStartOf="@+id/tv_adr"
+        app:layout_constraintTop_toBottomOf="@+id/tv_adr" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

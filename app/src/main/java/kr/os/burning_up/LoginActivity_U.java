@@ -61,7 +61,7 @@ public class LoginActivity_U extends AppCompatActivity {
         btn_login_u.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String login_url = "http://192.168.102.25:8081/BurningAndroidServer/LoginService";
+                String login_url = "http://192.168.25.54:8081/BurningAndroidServer/LoginService";
 
                 StringRequest request = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
                     @Override
