@@ -3,6 +3,7 @@ package kr.os.burning_up;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -18,5 +19,12 @@ public class Update_M extends AppCompatActivity {
         edt_mngpw = findViewById(R.id.edt_mngpw);
         edt_mngtel = findViewById(R.id.edt_mngtel);
         btn_updateok = findViewById(R.id.btn_updateok);
+
+        btn_updateok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }

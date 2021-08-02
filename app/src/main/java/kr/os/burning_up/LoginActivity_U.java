@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DownloadManager;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -61,11 +62,20 @@ public class LoginActivity_U extends AppCompatActivity {
         btn_login_u.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String login_url = "http://192.168.25.54:8081/BurningAndroidServer/LoginService";
+                String login_url = "http://172.30.1.50:8081/BurningAndroidServer/LoginService";
 
                 StringRequest request = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+
+                        String result = edt_id_u.getText().toString();
+
+                        SharedPreferences pref = getSharedPreferences("move",MODE_PRIVATE);
+                        SharedPreferences.Editor editor = pref.edit();
+
+                        editor.putString("result", result);
+                        editor.commit();
+
                         if(response.equals("1")){
                             Intent intent = new Intent(getApplicationContext(), MainActivity_M.class);
                             startActivity(intent);

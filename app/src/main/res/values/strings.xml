@@ -44,7 +44,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--  관리자 프래그먼트  -->
-    <string name="tv_frag1">좀 되라 씨발</string>
     <string name="btn_mypage_m">마이페이지</string>
     <string name="btn_alarm">알림</string>
     <string name="btn_fecall">소화기 호출</string>
@@ -63,6 +62,7 @@
     <string name="tv_tel">연락처</string>
     <string name="btn_logout">로그아웃</string>
     <string name="btn_update">정보수정</string>
+
     <!--  관리자 정보수정  -->
     <string name="edt_mngname">이름입력</string>
     <string name="edt_mngpw">비밀번호입력</string>
