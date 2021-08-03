@@ -47,7 +47,7 @@ public class Mypage_M extends AppCompatActivity {
 
         queue = Volley.newRequestQueue(getApplicationContext());
 
-        String login_url = "http://172.30.1.50:8081/BurningAndroidServer/UserSelectService";
+        String login_url = "http://192.168.193.25:8081/BurningAndroidServer/UserSelectService";
 
         StringRequest request = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
             @Override

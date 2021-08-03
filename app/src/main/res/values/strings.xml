@@ -68,4 +68,18 @@
     <string name="edt_mngpw">비밀번호입력</string>
     <string name="edt_mngtel">전화번호입력</string>
     <string name="btn_updateok">수정완료</string>
+
+    <!--  소화기 관리  -->
+    <string name="tv_n">No.</string>
+    <string name="tv_place">설치장소</string>
+    <string name="tv_date">등록일자</string>
+    <string name="tv_check">점검</string>
+    <string name="btn_add">추가하기</string>
+    <string name="btn_fecheck">소화기 점검</string>
+    <string name="btn_fediposal">소화기 폐기</string>
+    <!-- list  -->
+    <string name="tv_num">1</string>
+    <string name="tv_place1">3층 강의실B</string>
+    <string name="tv_date1">2021-08-02</string>
+    <string name="btn_check">점검하기</string>
 </resources>
