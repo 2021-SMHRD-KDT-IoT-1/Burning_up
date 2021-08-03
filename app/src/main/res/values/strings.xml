@@ -18,7 +18,7 @@
     <string name="radio_woman">여</string>
     <string name="btn_joinok_u">가입하기</string>
     <string name="btn_joincancel_u">취소</string>
-    성별 라디오버튼 추가해야함
+
     <!--  관리자 회원가입  -->
     <string name="edt_joinid_m">ID를 입력해주세요</string>
     <string name="edt_joinpw_m">비밀번호를 입력해주세요</string>
