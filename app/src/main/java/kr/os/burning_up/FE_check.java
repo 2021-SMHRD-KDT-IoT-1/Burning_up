@@ -19,7 +19,9 @@ public class FE_check extends AppCompatActivity {
         btn_checkok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getApplicationContext(), MainActivity_M.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

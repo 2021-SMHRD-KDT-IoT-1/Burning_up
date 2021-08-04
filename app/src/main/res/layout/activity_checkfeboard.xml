@@ -224,4 +224,76 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider10" />
+
+    <TextView
+        android:id="@+id/tv_board1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/tv_nomal"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider9"
+        app:layout_constraintTop_toBottomOf="@+id/divider11" />
+
+    <TextView
+        android:id="@+id/tv_board2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tv_nomal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_board1"
+        app:layout_constraintStart_toStartOf="@+id/tv_board1"
+        app:layout_constraintTop_toBottomOf="@+id/divider12" />
+
+    <TextView
+        android:id="@+id/tv_board3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tv_nomal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_board2"
+        app:layout_constraintStart_toStartOf="@+id/tv_board2"
+        app:layout_constraintTop_toBottomOf="@+id/divider13" />
+
+    <TextView
+        android:id="@+id/tv_board4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tv_nomal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_board3"
+        app:layout_constraintStart_toStartOf="@+id/tv_board3"
+        app:layout_constraintTop_toBottomOf="@+id/divider14" />
+
+    <TextView
+        android:id="@+id/tv_board5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tv_nomal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_board4"
+        app:layout_constraintStart_toStartOf="@+id/tv_board4"
+        app:layout_constraintTop_toBottomOf="@+id/divider15" />
+
+    <TextView
+        android:id="@+id/tv_board6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tv_nomal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_board5"
+        app:layout_constraintStart_toStartOf="@+id/tv_board5"
+        app:layout_constraintTop_toBottomOf="@+id/divider16" />
 </androidx.constraintlayout.widget.ConstraintLayout>

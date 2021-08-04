@@ -7,15 +7,6 @@
     tools:context=".FE_add">
 
     <TextView
-        android:id="@+id/tv_feplace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tv_feplace"
-        android:textSize="34sp"
-        app:layout_constraintStart_toStartOf="@+id/textView45"
-        app:layout_constraintTop_toBottomOf="@+id/textView45" />
-
-    <TextView
         android:id="@+id/tv_fenum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -114,4 +105,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_cancleadd"
         app:layout_constraintTop_toTopOf="@+id/btn_cancleadd" />
+
+    <EditText
+        android:id="@+id/edt_feplace"
+        android:layout_width="217dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="@string/edt_feplace"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView45"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
 </androidx.constraintlayout.widget.ConstraintLayout>
