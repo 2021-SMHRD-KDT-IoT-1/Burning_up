@@ -121,7 +121,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tv_place1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -142,10 +142,10 @@
         android:layout_marginRight="15dp"
         android:text="@string/tv_date1"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_place1"
         app:layout_constraintEnd_toStartOf="@+id/btn_check"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toTopOf="@+id/textView12" />
+        app:layout_constraintStart_toEndOf="@+id/tv_place1"
+        app:layout_constraintTop_toTopOf="@+id/tv_place1" />
 
     <Button
         android:id="@+id/btn_check"
@@ -202,9 +202,9 @@
         android:layout_marginTop="30dp"
         android:text="3층 강의실A"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView12"
-        app:layout_constraintStart_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_place1"
+        app:layout_constraintStart_toStartOf="@+id/tv_place1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_place1" />
 
     <TextView
         android:id="@+id/textView20"

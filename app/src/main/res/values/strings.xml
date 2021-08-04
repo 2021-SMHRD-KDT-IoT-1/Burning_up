@@ -85,4 +85,16 @@
 
     <!--  소화기 점검  -->
     <string name="btn_checkok">점검완료</string>
+
+    <!--  소화기 추가  -->
+
+    <string name="tv_fenum">소화기 고유번호</string>
+    <string name="tv_fepro">소화기 제조일</string>
+    <string name="tv_fedate">소화기 유통기한</string>
+    <string name="tv_feplace">소화기 설치 장소</string>
+    <string name="btn_cancleadd">취소</string>
+    <string name="btn_addfe">등록하기</string>
+
+    <!--  소화기 점검 확인  -->
+    <string name="btn_fecheckok">확인</string>
 </resources>
