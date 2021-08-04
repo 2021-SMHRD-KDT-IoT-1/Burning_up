@@ -15,7 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class Mainfrag2 extends Fragment {
-    Button btn_add, btn_fecheck, btn_fediposal;
+    Button btn_add, btn_fecheck, btn_fediposal, btn_check;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,6 +25,7 @@ public class Mainfrag2 extends Fragment {
         btn_add = view.findViewById(R.id.btn_add);
         btn_fecheck = view.findViewById(R.id.btn_fecheck);
         btn_fediposal = view.findViewById(R.id.btn_fediposal);
+        btn_check = view.findViewById(R.id.btn_check);
 
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,17 +34,18 @@ public class Mainfrag2 extends Fragment {
                 startActivity(intent);
             }
         });
-        btn_fecheck.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(view.getContext().getApplicationContext(), FE_check.class);
-                startActivity(intent);
-            }
-        });
+
         btn_fediposal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(view.getContext().getApplicationContext(), FE_disposal.class);
+                startActivity(intent);
+            }
+        });
+        btn_check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(view.getContext().getApplicationContext(), FE_check.class);
                 startActivity(intent);
             }
         });

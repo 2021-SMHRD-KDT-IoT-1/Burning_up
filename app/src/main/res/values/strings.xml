@@ -82,4 +82,7 @@
     <string name="tv_place1">3층 강의실B</string>
     <string name="tv_date1">2021-08-02</string>
     <string name="btn_check">점검하기</string>
+
+    <!--  소화기 점검  -->
+    <string name="btn_checkok">점검완료</string>
 </resources>

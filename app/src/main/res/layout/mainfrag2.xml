@@ -143,12 +143,12 @@
         android:text="@string/tv_date1"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView12"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/btn_check"
         app:layout_constraintStart_toEndOf="@+id/textView12"
         app:layout_constraintTop_toTopOf="@+id/textView12" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -224,9 +224,9 @@
         android:layout_marginTop="5dp"
         android:text="점검하기"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_check"
+        app:layout_constraintStart_toStartOf="@+id/btn_check"
+        app:layout_constraintTop_toBottomOf="@+id/btn_check" />
 
     <TextView
         android:id="@+id/textView21"
