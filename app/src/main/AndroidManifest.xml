@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Burning_up"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Floar_3"
+            android:exported="true" />
+        <activity
             android:name=".FE_disposal_req"
             android:exported="true" />
         <activity

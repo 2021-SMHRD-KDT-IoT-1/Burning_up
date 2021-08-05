@@ -1,6 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <View
+        android:id="@+id/divider17"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:text="NO."
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:text="층수"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView59"
+        app:layout_constraintStart_toEndOf="@+id/textView59"
+        app:layout_constraintTop_toTopOf="@+id/textView59" />
+
+    <View
+        android:id="@+id/divider18"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="100dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider17" />
+
+    <View
+        android:id="@+id/divider19"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider18" />
+
+    <View
+        android:id="@+id/divider20"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider19" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="1"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider18"
+        app:layout_constraintEnd_toEndOf="@+id/textView59"
+        app:layout_constraintStart_toStartOf="@+id/textView59"
+        app:layout_constraintTop_toBottomOf="@+id/divider17" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider19"
+        app:layout_constraintEnd_toEndOf="@+id/textView67"
+        app:layout_constraintStart_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toBottomOf="@+id/divider18" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider20"
+        app:layout_constraintEnd_toEndOf="@+id/textView68"
+        app:layout_constraintStart_toStartOf="@+id/textView68"
+        app:layout_constraintTop_toBottomOf="@+id/divider19" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1층"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView67"
+        app:layout_constraintEnd_toEndOf="@+id/textView66"
+        app:layout_constraintStart_toStartOf="@+id/textView66"
+        app:layout_constraintTop_toTopOf="@+id/textView67" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2층"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView68"
+        app:layout_constraintEnd_toEndOf="@+id/textView70"
+        app:layout_constraintStart_toStartOf="@+id/textView70"
+        app:layout_constraintTop_toTopOf="@+id/textView68" />
+
+    <TextView
+        android:id="@+id/tv_floar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_floar3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView69"
+        app:layout_constraintEnd_toEndOf="@+id/textView71"
+        app:layout_constraintStart_toStartOf="@+id/textView71"
+        app:layout_constraintTop_toTopOf="@+id/textView69" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="수정"
+        app:layout_constraintBottom_toBottomOf="@+id/textView70"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/textView70"
+        app:layout_constraintTop_toTopOf="@+id/textView70" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="수정"
+        app:layout_constraintBottom_toBottomOf="@+id/textView71"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/textView71" />
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_change"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_floar3"
+        app:layout_constraintEnd_toEndOf="@+id/button20"
+        app:layout_constraintStart_toStartOf="@+id/button20"
+        app:layout_constraintTop_toTopOf="@+id/tv_floar3" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_change"
+        app:layout_constraintEnd_toEndOf="@+id/button21"
+        app:layout_constraintStart_toStartOf="@+id/button21"
+        app:layout_constraintTop_toTopOf="@+id/btn_change" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="삭제"
+        app:layout_constraintBottom_toBottomOf="@+id/button20"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/button20" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="삭제"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="건물 단면도 현황"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
