@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Burning_up"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".FE_disposal_req"
+            android:exported="true" />
+        <activity
             android:name=".Checkfeboard"
             android:exported="true" />
         <activity
@@ -29,9 +32,6 @@
             android:exported="true" />
         <activity
             android:name=".Mypage_M"
-            android:exported="true" />
-        <activity
-            android:name=".Alarm_M"
             android:exported="true" />
         <activity android:name=".MainActivity_M">
             <intent-filter>

@@ -45,7 +45,6 @@
 
     <!--  관리자 프래그먼트  -->
     <string name="btn_mypage_m">마이페이지</string>
-    <string name="btn_alarm">알림</string>
     <string name="btn_fecall">소화기 호출</string>
 
     <!--  마이페이지  -->
@@ -99,4 +98,10 @@
 
     <!--  소화기 점검 확인  -->
     <string name="btn_fecheckok">확인</string>
+
+    <!--  소화기 폐기  -->
+    <string name="btn_disposal">폐기 신청</string>
+    <string name="edt_fenum">고유번호 입력</string>
+    <string name="edt_wishday">수거 희망일 입력</string>
+
 </resources>
