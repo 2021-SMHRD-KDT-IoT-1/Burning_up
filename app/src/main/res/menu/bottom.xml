@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fe_alarm"
+        android:title="소화기 알림" />
+    <item
+        android:id="@+id/bd_pic"
+        android:title="건물 단면도" />
+    <item
+        android:id="@+id/info"
+        android:title="게시판" />
+</menu>
