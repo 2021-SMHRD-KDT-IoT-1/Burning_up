@@ -3,14 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home_m"
+        android:icon="@android:drawable/ic_menu_myplaces"
         android:title="홈" />
     <item
         android:id="@+id/fe_m"
+        android:icon="@android:drawable/ic_menu_mylocation"
         android:title="소화기" />
     <item
         android:id="@+id/bd_m"
+        android:icon="@android:drawable/ic_menu_manage"
         android:title="건물" />
     <item
         android:id="@+id/info_m"
+        android:icon="@android:drawable/ic_menu_mapmode"
         android:title="공지사항" />
 </menu>
