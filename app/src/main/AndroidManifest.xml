@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Burning_up"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".User_floar3"
+            android:exported="true" />
+        <activity
             android:name=".Floar_3"
             android:exported="true" />
         <activity
@@ -40,14 +43,16 @@
 
         </activity>
         <activity android:name=".MainActivity_U">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".JoinActivity_U" />
-        <activity android:name=".LoginActivity_U" />
+        <activity android:name=".LoginActivity_U">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
         <activity android:name=".JoinActivity_M" />
     </application>
 
