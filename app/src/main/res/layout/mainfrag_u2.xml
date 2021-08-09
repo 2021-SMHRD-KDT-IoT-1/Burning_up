@@ -12,8 +12,8 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
-        android:text="소화기 관리"
-        android:textSize="34sp"
+        android:text="스마트인재개발원 소화기 관리"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,8 +55,8 @@
         android:id="@+id/textView77"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
         android:text="점검일자"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView76"
@@ -69,9 +69,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         android:text="점검결과"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView77"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView77"
         app:layout_constraintTop_toTopOf="@+id/textView77" />
 
@@ -135,8 +138,8 @@
         android:layout_height="wrap_content"
         android:text="3층 강의실A"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView94"
-        app:layout_constraintStart_toStartOf="@+id/textView94"
+        app:layout_constraintEnd_toEndOf="@+id/tv_place1_U"
+        app:layout_constraintStart_toStartOf="@+id/tv_place1_U"
         app:layout_constraintTop_toTopOf="@+id/textView80" />
 
     <TextView
@@ -167,7 +170,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textView77"
         app:layout_constraintStart_toStartOf="@+id/textView77"
-        app:layout_constraintTop_toTopOf="@+id/textView94" />
+        app:layout_constraintTop_toTopOf="@+id/tv_place1_U" />
 
     <TextView
         android:id="@+id/textView88"
@@ -230,7 +233,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView89" />
 
     <TextView
-        android:id="@+id/textView94"
+        android:id="@+id/tv_place1_U"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv_place1"

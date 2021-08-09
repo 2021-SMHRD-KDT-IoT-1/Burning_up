@@ -13,7 +13,7 @@ public class MainActivity_U extends AppCompatActivity {
     BottomNavigationView nav2;
     Mainfrag_U1 frag1;
     Mainfrag_U2 frag2;
-    Mainfrag_U3 frag3;
+    Mainfrag4 frag3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class MainActivity_U extends AppCompatActivity {
 
         frag1 = new Mainfrag_U1();
         frag2 = new Mainfrag_U2();
-        frag3 = new Mainfrag_U3();
+        frag3 = new Mainfrag4();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.Frame2, frag1).commit();
 

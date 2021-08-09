@@ -1,6 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <View
+        android:id="@+id/divider22"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="70dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider23"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="70dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider22" />
+
+    <View
+        android:id="@+id/divider24"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider23" />
+
+    <View
+        android:id="@+id/divider25"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/divider24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider26"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/divider24"
+        app:layout_constraintStart_toEndOf="@+id/divider25"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="글 번호"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider22"
+        app:layout_constraintEnd_toStartOf="@+id/divider25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider23"
+        app:layout_constraintEnd_toEndOf="@+id/textView91"
+        app:layout_constraintStart_toStartOf="@+id/textView91"
+        app:layout_constraintTop_toBottomOf="@+id/divider22" />
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider24"
+        app:layout_constraintEnd_toEndOf="@+id/textView94"
+        app:layout_constraintStart_toStartOf="@+id/textView94"
+        app:layout_constraintTop_toBottomOf="@+id/divider23" />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView91"
+        app:layout_constraintEnd_toStartOf="@+id/divider26"
+        app:layout_constraintStart_toEndOf="@+id/divider25"
+        app:layout_constraintTop_toTopOf="@+id/textView91" />
+
+    <TextView
+        android:id="@+id/tv_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_board"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView94"
+        app:layout_constraintEnd_toEndOf="@+id/textView96"
+        app:layout_constraintStart_toStartOf="@+id/textView96"
+        app:layout_constraintTop_toTopOf="@+id/textView94" />
+
+    <TextView
+        android:id="@+id/textView98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="소화전 사용법"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView95"
+        app:layout_constraintEnd_toEndOf="@+id/tv_board"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="@+id/tv_board"
+        app:layout_constraintTop_toTopOf="@+id/textView95" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="작성일"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView96"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/divider26"
+        app:layout_constraintTop_toTopOf="@+id/textView96"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021.07.28"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_board"
+        app:layout_constraintEnd_toEndOf="@+id/textView99"
+        app:layout_constraintStart_toStartOf="@+id/textView99"
+        app:layout_constraintTop_toTopOf="@+id/tv_board"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021.05.24"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView98"
+        app:layout_constraintEnd_toEndOf="@+id/textView100"
+        app:layout_constraintStart_toStartOf="@+id/textView100"
+        app:layout_constraintTop_toTopOf="@+id/textView98" />
 </androidx.constraintlayout.widget.ConstraintLayout>

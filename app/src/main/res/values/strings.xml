@@ -120,4 +120,6 @@
     <string name="btn_stop">소화기 찾기중지</string>
 
     <string name="tv_mngst">양호</string>
+
+    <string name="tv_board">소방훈련 안내</string>
 </resources>
