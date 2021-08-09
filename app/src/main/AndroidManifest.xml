@@ -40,14 +40,14 @@
             android:name=".Mypage_M"
             android:exported="true" />
         <activity android:name=".MainActivity_M">
+
+        </activity>
+        <activity android:name=".MainActivity_U">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".MainActivity_U">
-
         </activity>
         <activity android:name=".JoinActivity_U" />
         <activity android:name=".LoginActivity_U">

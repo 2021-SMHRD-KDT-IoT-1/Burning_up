@@ -118,4 +118,6 @@
     <string name="btn_findfe">소화기 찾기</string>
     <!--  소화기 찾기 화면  -->
     <string name="btn_stop">소화기 찾기중지</string>
+
+    <string name="tv_mngst">양호</string>
 </resources>
