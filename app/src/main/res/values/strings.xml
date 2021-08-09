@@ -103,6 +103,11 @@
     <string name="btn_disposal">폐기 신청</string>
     <string name="edt_fenum">고유번호 입력</string>
     <string name="edt_wishday">수거 희망일 입력</string>
+    <string name="tv_num4"></string>
+    <string name="tv_fenum4"></string>
+    <string name="tv_hopeday"></string>
+    <string name="tv_why"></string>
+    <string name="btn_home">돌아가기</string>
 
     <!--  건물 단면도  -->
     <string name="tv_floar3">3층</string>

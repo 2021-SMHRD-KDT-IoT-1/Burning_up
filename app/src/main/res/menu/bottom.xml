@@ -4,11 +4,14 @@
 
     <item
         android:id="@+id/fe_alarm"
+        android:icon="@drawable/fe"
         android:title="소화기 찾기" />
     <item
         android:id="@+id/bd_pic"
+        android:icon="@drawable/building"
         android:title="건물 정보" />
     <item
         android:id="@+id/info"
+        android:icon="@drawable/board"
         android:title="공지사항" />
 </menu>

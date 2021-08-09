@@ -37,8 +37,7 @@ public class FE_add extends AppCompatActivity {
         btn_cancleadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity_M.class);
-                startActivity(intent);
+
                 finish();
             }
         });

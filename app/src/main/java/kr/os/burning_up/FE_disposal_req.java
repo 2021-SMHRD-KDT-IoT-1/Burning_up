@@ -9,12 +9,15 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
-public class FE_disposal_req extends AppCompatActivity {
+public class FE_disposal_req extends AppCompatActivity implements View.OnClickListener{
     Spinner spinner2;
     String[] items = {"부식","파손","사용"};
     EditText edt_fenum, edt_wishday;
     Button btn_cancledis, btn_adddis;
+    TextView tv_num4, tv_fenum4, tv_hopeday, tv_why;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +36,13 @@ public class FE_disposal_req extends AppCompatActivity {
         btn_adddis = findViewById(R.id.btn_adddis);
         btn_cancledis = findViewById(R.id.btn_cancledis);
 
+
+
+
+
         btn_cancledis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), FE_disposal.class);
-                startActivity(intent);
                 finish();
             }
         });
@@ -46,10 +51,18 @@ public class FE_disposal_req extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), FE_disposal.class);
+                intent.putExtra("번호","4");
+                intent.putExtra("고유번호",edt_fenum.getText().toString());
+                intent.putExtra("희망날짜",edt_wishday.getText().toString());
+                intent.putExtra("사유","사용");
                 startActivity(intent);
-                finish();
             }
         });
+
+    }
+
+    @Override
+    public void onClick(View v) {
 
     }
 }
