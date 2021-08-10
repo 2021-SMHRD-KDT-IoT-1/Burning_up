@@ -46,7 +46,7 @@ public class Update_M extends AppCompatActivity {
                 String pw = edt_mngpw.getText().toString();
                 String tel = edt_mngtel.getText().toString();
 
-                String join_url = "http://192.168.25.11:8081/BurningAndroidServer/UserUpdateService";
+                String join_url = "http://172.30.1.50:8081/BurningAndroidServer/UserUpdateService";
 
                 StringRequest request = new StringRequest(Request.Method.POST, join_url, new Response.Listener<String>() {
                     @Override

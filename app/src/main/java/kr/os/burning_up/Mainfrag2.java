@@ -1,24 +1,42 @@
 package kr.os.burning_up;
 
+import static android.content.Context.MODE_PRIVATE;
+
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Mainfrag2 extends Fragment {
     Button btn_add, btn_fecheck, btn_fediposal, btn_check;
     TextView tv_place1, femng_num, femng_place, femng_day;
     String num,place,day;
+    RequestQueue queue;
+    private Context context;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -32,6 +50,50 @@ public class Mainfrag2 extends Fragment {
         femng_num = view.findViewById(R.id.femng_num);
         femng_place = view.findViewById(R.id.femng_place);
         femng_day = view.findViewById(R.id.femng_day);
+        context = container.getContext();
+
+        queue = Volley.newRequestQueue(getActivity().getApplicationContext());
+
+        btn_check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+
+                String gyro_url = "http://172.30.1.50:8081/BurningAndroidServer/Gyrosensor2";
+
+                StringRequest request = new StringRequest(Request.Method.POST, gyro_url, new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.v("응답결과",response);
+                        if(response.equals("0")) {
+                            Intent intent = new Intent(view.getContext().getApplicationContext(), FE_check.class);
+                            startActivity(intent);
+                        }else{
+                            Toast.makeText(context,"소화약제를 흔들어주세요", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                    }
+                }){
+                    @Override
+                    protected Map<String, String> getParams() throws AuthFailureError {
+
+                        Map<String, String> params = new HashMap<>();
+                        params.put("value","0");
+                        return params;
+                    }
+                };
+
+                queue.add(request);
+
+            }
+        });
+
+
 
         Bundle args = getArguments();
 
@@ -71,13 +133,7 @@ public class Mainfrag2 extends Fragment {
                 startActivity(intent);
             }
         });
-        btn_check.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(view.getContext().getApplicationContext(), FE_check.class);
-                startActivity(intent);
-            }
-        });
+
         return view;
     }
 }
