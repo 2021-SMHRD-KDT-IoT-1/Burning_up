@@ -3,6 +3,8 @@ package kr.os.burning_up;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -64,14 +66,15 @@ public class FE_add extends AppCompatActivity {
         btn_addfe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
 
-                Bundle bundle = new Bundle();
+
+                Bundle bundle = new Bundle(3);
                 bundle.putString("번호","5");
                 bundle.putString("설치장소",edt_feplace.getText().toString());
                 bundle.putString("점검일자",tv_fepro.getText().toString());
                 frag.setArguments(bundle);
-                startActivity(intent);
+
+
                 finish();
             }
         });
