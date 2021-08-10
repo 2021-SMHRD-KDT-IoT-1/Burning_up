@@ -17,7 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Mainfrag2 extends Fragment {
     Button btn_add, btn_fecheck, btn_fediposal, btn_check;
-    TextView tv_place1;
+    TextView tv_place1, femng_num, femng_place, femng_day;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,6 +29,21 @@ public class Mainfrag2 extends Fragment {
         btn_fediposal = view.findViewById(R.id.btn_fediposal);
         btn_check = view.findViewById(R.id.btn_check);
         tv_place1 = view.findViewById(R.id.tv_place1);
+        femng_num = view.findViewById(R.id.femng_num);
+        femng_place = view.findViewById(R.id.femng_place);
+        femng_day = view.findViewById(R.id.femng_day);
+
+        Bundle args = getArguments();
+        if(args != null){
+            String num = args.getString("번호");
+            String place = args.getString("설치장소");
+            String day = args.getString("점검일자");
+            femng_num.setText(num);
+            femng_place.setText(place);
+            femng_day.setText(day);
+        }
+
+
 
         tv_place1.setOnClickListener(new View.OnClickListener() {
             @Override

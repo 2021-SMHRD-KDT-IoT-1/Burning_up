@@ -76,6 +76,7 @@
     <string name="btn_add">추가하기</string>
     <string name="btn_fecheck">소화기 점검</string>
     <string name="btn_fediposal">소화기 폐기</string>
+    <string name="btn_feadd">QR로 불러오기</string>
     <!-- list  -->
     <string name="tv_num">1</string>
     <string name="tv_place1">3층 강의실B</string>
